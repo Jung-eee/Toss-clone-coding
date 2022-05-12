@@ -3,16 +3,19 @@ html,body { height: 100vh; width: 100vw; }
 body{
   overflow-x: hidden;
 }
-/* .main_img {
-  position: relative;
-  overflow: hidden;
-  width: auto;
-  height: 100vh;
-} */
 #mainbanner .inner {
   height: 100vh;
   margin: 0 auto;
   position: relative;
+}
+.main_img video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 .main_img img {
   height: 100%;
@@ -27,6 +30,7 @@ body{
 position: relative;
 top: 170px;
 display: flex;
+flex-direction: column;
 }
 #mainbanner .inner .m_txt h1 {
   width: 100%;
@@ -41,6 +45,7 @@ display: flex;
   position: relative;
   display: inline-flex;
   justify-content:center;
+  align-items: center;
   margin: 1px 0 0;
   font-size: 15px;
   font-weight: 600;
@@ -51,13 +56,55 @@ display: flex;
   cursor: pointer;
   border: 0 solid transparent;
 }
-.m_btn1:hover, .m_btn2:hover {
-  background: rgb(78, 89, 104);
+#mainbanner .inner .main_img .btngroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainbanner .inner .main_img .btngroup .mbtn {
+  padding: 18px 28px;
+  background: rgba(0, 12, 30, 0.8);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+}
+#mainbanner .inner .main_img .btngroup .mbtn:hover {
+  background:
+}
+
+#mainbanner .inner .main_img .btngroup .m_btn1 {
+  margin-right: 4px;
+}
+
+#mainbanner .inner .main_img .btngroup .mbtn img {
+  margin-right: 6px;
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px !important;
+}
+.inner_txt {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 204px;
+  padding: 200px 0;
+  background: #f9fafb
+}
+.inner_txt p {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #191f28;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 /*헤더부분*/
 .h_inner {
   position: fixed;
+  overflow: hidden;
   z-index: 50;
   top: 0;
   width: 100%;
@@ -70,11 +117,13 @@ display: flex;
 .introduce {
   display: flex;
   float: right;
+  height: 100%;
 }
 
 #gnb ul {
   display: flex;
   align-items: center;
+  height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -86,7 +135,7 @@ display: flex;
   padding: 0 8px;
   color: #4e5968;
 }
-#gnb ul li a, #gnb_r ul li a{
+.h_inner #gnb ul li a, .h_inner #gnb_r ul li a{
   padding: 12px 10px;
   font-size: 15px;
   line-height: 20px;
@@ -104,8 +153,10 @@ display: flex;
 }
 #top_logo {
   display: flex;
+  float: left;
   align-items: center;
   margin: 20px 24px;;
+  width: 80px;
 }
 #top_logo svg {
   width: auto;
@@ -116,9 +167,34 @@ display: flex;
 #gnb_r ul {
   display: flex;
   align-items: center;
+  height: 100%;
   padding: 0;
   margin: 0;
 }
-#gnb_r ul li a:nth-child(1){
+#gnb_r ul li:nth-child(1) a{
   margin-left: 44px;
+}
+/*section 1*/
+section#first {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+section#first .container {
+  padding: 250px 0 165px 0;
+}
+section#first .container .f_inner {
+  width: 92%;
+  max-width: calc(100% - 48px);
+}
+section#first .container .f_inner .f_big_inner{
+  position: relative;
+  height: 1272px;
+}
+section#first .container .f_inner .f_big_inner .f_txt_inner {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translate3d(0px, 50px, 0px);
+  animation: 0.5s ease-in-out 0s 1 normal forwards running animation-1x3fevv;
 }
