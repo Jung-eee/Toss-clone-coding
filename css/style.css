@@ -283,6 +283,14 @@ section#second .s_txt_inner {
   transform: translate3d(0px, 50px, 0px);
   animation: 0.5s ease-in-out 0s 1 normal forwards running forwards;
 }
+section#second .s_mini_inner {
+  padding: 0px;
+  margin: 0 0 150px;
+}
+section#second .s_mini_inner img {
+  flex-basis: calc(50% - 30px);
+  max-width: calc(50% - 30px);
+}
 section#second .odd_inner {
 display: flex;
 flex-wrap: wrap;
@@ -305,6 +313,8 @@ section#second .s_mini_txt_inner {
   padding-left: 38px;
   width: 556px;
   height: 100%;
+  flex-basis: calc(50% - 30px);
+  max-width: calc(50% - 30px);
 }
 section#second .s_mini_txt_inner1{
   margin-bottom: 10px;
@@ -542,6 +552,10 @@ section#fourth .four_img {
   isolation: isolate;
   height: 400px;
   background-color: inherit;
+  flex-basis: calc(50% - 30px);
+  max-width: calc(50% - 30px);
+  padding: 0;
+
 }
 section#fourth .icon {
   width: 120px;
@@ -561,7 +575,7 @@ section#fourth p.four_txt {
   animation: 1s ease-in-out 0.5s 1 normal forwards running forwards;
 }
 section#fourth p.four_mini_txt {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
   color: rgb(107, 118, 132);
