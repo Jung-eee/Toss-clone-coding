@@ -583,6 +583,20 @@ section#fourth p.four_mini_txt {
   transform: translate3d(0px, 50px, 0px);
   animation: 1s ease-in-out 0.5s 1 normal forwards running forwards;
 }
+/*section 5*/
+section#fifth {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+section#fifth .fifth_inner_{
+  padding: 250px 0;
+}
+section#fifth .five_container {
+  opacity: 0;
+  transform: translate3d(0px, 50px, 0px);
+  animation: 0.5s ease-in-out 0s 1 normal forwards running forwards;
+}
 @keyframes forwards{
   0% {
     opacity: 0;
